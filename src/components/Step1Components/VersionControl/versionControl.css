@@ -1,0 +1,350 @@
+.version-control-outer-container {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 100px;
+  padding-left: 100px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #121212;
+  /* min-height: 100vh; */
+  min-height: 120px;
+}
+
+.version-control-block {
+  background-color: #1A1A1A;
+  color: #ffffff;
+  border-radius: 8px;
+  /* padding: 28px; */
+  padding-top: 16px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid #282828;
+  min-width: 1000px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vc-top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.vc-header-left {
+  flex: 1;
+  max-width: 250px;
+}
+
+.vc-header-right {
+  text-align: right;
+  font-size: 10px;
+  line-height: 1.1;
+  max-width: 200px;
+}
+
+.vc-title {
+  font-size: 16px;
+  font-weight: 200;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.vc-help-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.vc-help-link:hover {
+  text-decoration: underline;
+}
+
+.vc-help-description {
+  color: #888888;
+  margin: 4px 0 0 0;
+  line-height: 1.3;
+}
+
+.vc-options-wrapper {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vc-options {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  max-width: 400px;
+  justify-content: center;
+  max-height: 40px;
+  align-items: center;
+}
+
+.vc-option {
+  background-color: #2a2a2a49;
+  border: 1px solid #404040;
+  border-radius: 8px;
+  padding: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 180px;
+  position: relative;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.vc-option.active {
+  border-color: #4a9eff;
+  background-color: #0e1622;
+}
+
+.vc-option-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.vc-option-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vc-option-name {
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.github-icon {
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+}
+
+.gitlab-icon {
+  color: #e24329;
+  width: 20px;
+  height: 20px;
+}
+
+.vc-option-status {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.vc-option-status.connected {
+  color: green;
+}
+
+.vc-option-status.not-connected {
+  color: #888888;
+}
+
+/* Divider Line */
+.vc-divider {
+  border-bottom: 1px dashed #404040;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/* Bottom Section */
+.vc-bottom-section {
+  padding-bottom: 0px;
+}
+
+.vc-input-group {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.vc-input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+
+.vc-input-label {
+  font-size: 10px;
+  color: #888888;
+  font-weight: 500;
+  order: 2;
+  margin-top: 4px;
+  margin-bottom: 25px;
+}
+
+.vc-input-box {
+  background-color: #1A1A1A;
+  border: 1px solid #404040;
+  border-radius: 6px;
+  padding: 8px 12px 8px 32px;
+  font-size: 14px;
+  color: #ffffff;
+  outline: none;
+  transition: border-color 0.2s;
+  height: 30px;
+  width: 296px;
+  box-sizing: border-box;
+  order: 1;
+
+}
+
+.vc-input-box::placeholder {
+  color: #888888;
+}
+
+.vc-input-box:focus {
+  border-color: #4a9eff;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  color: #888888;
+  width: 16px;
+  height: 16px;
+  z-index: 1;
+}
+
+.configure-github-container {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.configure-github-btn {
+  color: #ffffff;
+  padding: 1px 10px 10px 25px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  height: 33px;
+  cursor: pointer;
+}
+
+.configure-github-btn svg {
+  color: #ffffff;
+}
+
+
+/* Add these to your existing versionControl.css */
+
+.error-input {
+  border-color: #ff4444 !important;
+}
+
+.error-label {
+  color: #ff4444 !important;
+}
+
+.input-error-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ff4444;
+}
+
+.vc-input-field {
+  position: relative;
+}
+
+
+.vc-input-box:focus {
+  border-color: #4d90fe;
+  box-shadow: 0 0 0 1px #4d90fe;
+}
+
+.vc-input-box.error-input:focus {
+  border-color: #ff4444;
+  box-shadow: 0 0 0 1px #ff4444;
+}
+
+
+.vc-input-box {
+  padding-right: 30px !important;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .version-control-outer-container {
+    padding: 32px 60px;
+  }
+
+  .vc-input-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .configure-github-container {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .version-control-outer-container {
+    padding: 24px 20px;
+  }
+
+  .vc-top-section {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .vc-header-left,
+  .vc-header-right {
+    max-width: 100%;
+  }
+
+  .vc-header-right {
+    text-align: left;
+  }
+
+  .vc-options-wrapper {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .vc-options {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .vc-option {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .vc-input-group {
+    grid-template-columns: 1fr;
+  }
+
+  .configure-github-container {
+    grid-column: span 1;
+  }
+}

@@ -1,0 +1,178 @@
+.details-control-outer-container {
+    padding: 0px 100px 0px 100px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    background-color: #121212;
+    min-height: 120px;
+}
+
+.details-control-block {
+    background-color: #1A1A1A;
+    color: #ffffff;
+    border-radius: 8px;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: 1px solid #282828;
+    min-width: 1000px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.db-top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.db-header-left {
+    flex: 1;
+    max-width: 250px;
+}
+
+.db-header-right {
+    text-align: right;
+    font-size: 10px;
+    line-height: 1.1;
+    max-width: 200px;
+}
+
+.db-title {
+    font-size: 16px;
+    font-weight: 200;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.db-help-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.db-help-link:hover {
+    text-decoration: underline;
+}
+
+.db-help-description {
+    color: #888888;
+    margin: 4px 0 0 0;
+    line-height: 1.3;
+}
+
+.db-divider {
+    border-bottom: 1px dashed #404040;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+/* Bottom Section */
+.db-bottom-section {
+    padding-bottom: 1px;
+}
+
+.db-description-block {
+    background-color: #242424;
+    border: 1px solid #282828;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 14px;
+    display: block;
+}
+
+.db-description-text {
+    font-size: 12px;
+    color: #888888;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+.db-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.db-connect-btn,
+.db-maybe-later-btn {
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.db-connect-btn {
+    background-color: #2bc54f38;
+    color: #a3fb9eb4;
+    border: 1px solid transparent;
+    border-radius: 12px;
+}
+
+.db-connect-btn:hover {
+    background-color: #10dc3f38;
+    border-color: transparent;
+}
+
+.db-maybe-later-btn {
+    background-color: #242424;
+    color: #ffffff;
+    border: 1px solid transparent;
+}
+
+.db-maybe-later-btn:hover {
+    background-color: #2f2f2f;
+    border-color: transparent;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .details-control-outer-container {
+        padding: 32px 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .details-control-outer-container {
+        padding: 24px 20px;
+    }
+
+    .db-top-section {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .db-header-left,
+    .db-header-right {
+        max-width: 100%;
+    }
+
+    .db-header-right {
+        text-align: left;
+    }
+
+    .db-buttons-container {
+        flex-direction: column;
+    }
+
+    .db-connect-btn,
+    .db-maybe-later-btn {
+        width: 100%;
+    }
+
+}
